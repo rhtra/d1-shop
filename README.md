@@ -64,3 +64,13 @@ cd d1-shop
 npm install
 # or
 yarn install
+```
+
+### Install
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+This starts the local development server (by default at http://localhost:3000 or as configured in Vite).
