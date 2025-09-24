@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# d1-shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end eCommerce / shop template built with **React + TypeScript + Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [About](#about)  
+- [Features](#features)  
+- [Demo / Screenshots](#demo--screenshots)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Install](#install)  
+  - [Running Locally](#running-locally)  
+  - [Building for Production](#building-for-production)  
+- [Project Structure](#project-structure)  
+- [Technologies Used](#technologies-used)  
+- [Linting / Formatting](#linting--formatting)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Acknowledgments](#acknowledgments)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**d1-shop** is a minimal eCommerce frontend template using React, TypeScript, and Vite. It aims to provide a starter layout and architecture for building a shop, with routing, state management, component structure, and build tooling in place.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Currently, the repo is based on the default React + TypeScript + Vite template. :contentReference[oaicite:0]{index=0}
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+There is no published description, website, or topics as of now. :contentReference[oaicite:1]{index=1}
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React + TypeScript + Vite setup  
+- Fast HMR (Hot Module Replacement)  
+- ESLint configuration included for code quality  
+- Opinionated folder structure for scalability  
+- Build scripts for production  
+- (Future / placeholder) eCommerce-specific pages: product listing, product detail, cart, checkout  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Demo / Screenshots
+
+\* You may insert screenshots or a live demo link here.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have:
+
+- [Node.js](https://nodejs.org/) (v16+ recommended)  
+- npm or yarn package manager  
+
+### Install
+
+```bash
+git clone https://github.com/rhtra/d1-shop.git
+cd d1-shop
+npm install
+# or
+yarn install
