@@ -4,22 +4,6 @@ A front-end eCommerce / shop template built with **React + TypeScript + Vite**.
 
 ---
 
-## Table of Contents
-
-- [About](#about)  
-- [Features](#features)  
-- [Demo / Screenshots](#demo--screenshots)  
-- [Getting Started](#getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Install](#install)  
-  - [Running Locally](#running-locally)  
-  - [Building for Production](#building-for-production)  
-- [Project Structure](#project-structure)  
-- [Technologies Used](#technologies-used)  
-- [Linting / Formatting](#linting--formatting)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Acknowledgments](#acknowledgments)  
 
 ---
 
@@ -46,7 +30,20 @@ There is no published description, website, or topics as of now. :contentReferen
 
 ## Demo / Screenshots
 
-\* You may insert screenshots or a live demo link here.
+<img width="1439" height="717" alt="Screenshot 2025-09-25 at 3 33 05 AM" src="https://github.com/user-attachments/assets/29851510-37cc-4f77-92b2-0580b37c49c0" />
+<img width="1439" height="707" alt="Screenshot 2025-09-25 at 3 33 17 AM" src="https://github.com/user-attachments/assets/ffe456d5-7a98-42ab-8479-f4ff33a8c78c" />
+<img width="1438" height="718" alt="Screenshot 2025-09-25 at 3 33 30 AM" src="https://github.com/user-attachments/assets/90fe9266-b5bc-49fa-a47e-fd9eb57b3741" />
+<img width="1440" height="699" alt="Screenshot 2025-09-25 at 3 33 41 AM" src="https://github.com/user-attachments/assets/6024a4c8-e8b2-4dc1-bb0e-1be19a34470f" />
+<img width="1440" height="601" alt="Screenshot 2025-09-25 at 3 33 52 AM" src="https://github.com/user-attachments/assets/d90780fe-f548-464e-a503-14d8c4a6b3aa" />
+<img width="1428" height="459" alt="Screenshot 2025-09-25 at 3 34 00 AM" src="https://github.com/user-attachments/assets/00873476-f944-49e6-b67b-9f79f5833691" />
+<img width="1440" height="484" alt="Screenshot 2025-09-25 at 3 34 08 AM" src="https://github.com/user-attachments/assets/4036fa18-5532-413a-864e-b83813fbaa79" />
+<img width="1440" height="711" alt="Screenshot 2025-09-25 at 3 34 16 AM" src="https://github.com/user-attachments/assets/8c9c9aa0-2025-46c6-a23f-8ae9e756797a" />
+<img width="1437" height="645" alt="Screenshot 2025-09-25 at 3 34 24 AM" src="https://github.com/user-attachments/assets/3c22abf1-01f2-490d-9b24-4d157e8e5b18" />
+<img width="1424" height="713" alt="Screenshot 2025-09-25 at 3 34 52 AM" src="https://github.com/user-attachments/assets/19c5be32-04f1-490e-a75d-2479b23e7ed0" />
+<img width="1424" height="436" alt="Screenshot 2025-09-25 at 3 35 01 AM" src="https://github.com/user-attachments/assets/ecbcccae-9be4-4336-9f62-695d8f04e4b4" />
+<img width="1440" height="556" alt="Screenshot 2025-09-25 at 3 35 08 AM" src="https://github.com/user-attachments/assets/d24ebf8b-650b-4c6b-bdad-714caf881c45" />
+
+
 
 ---
 
