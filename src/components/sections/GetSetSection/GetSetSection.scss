@@ -1,0 +1,119 @@
+.getset {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  
+    &__content {
+      flex: 1;
+    }
+  
+    &__tag {
+      display: inline-block;
+      background: #f7b500;
+      color: #000;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+  
+    &__title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+  
+    &__description {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+  
+      li {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  
+    &__cta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    &__btn {
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+  
+      &:hover {
+        background: #333;
+      }
+    }
+  
+    &__price {
+      font-size: 1rem;
+      color: #777;
+    }
+  
+    &__images {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 1rem;
+  
+      .getset__img {
+        max-width: 140px;
+        height: auto;
+        display: block;
+  
+        &.scrub {
+          transform: translateY(20px);
+        }
+  
+        &.moisturizer {
+          max-width: 160px;
+        }
+  
+        &.cream {
+          transform: translateY(40px);
+        }
+      }
+    }
+  
+    @media (max-width: 900px) {
+      flex-direction: column;
+      text-align: center;
+  
+      &__images {
+        justify-content: center;
+      }
+  
+      &__cta {
+        justify-content: center;
+      }
+    }
+  }
+  

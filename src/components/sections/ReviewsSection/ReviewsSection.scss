@@ -1,0 +1,196 @@
+.reviews-section {
+  background: #1e1f29;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  .badge {
+    display: inline-block;
+    background: #ffb800;
+    color: #000;
+    padding: 0.4rem 1.2rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+  }
+
+  .product-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin-bottom: 5rem;
+  
+    .product-row {
+      display: flex;
+      align-items: center;              // keeps vertical alignment
+      justify-content: center;          // centers content together
+      gap: 6rem;                        // spacing between text + image
+      text-align: left;
+  
+      &.reverse {
+        flex-direction: row-reverse;
+  
+        .product-info {
+          text-align: right;
+        }
+      }
+  
+      .product-info {
+        flex: 0 1 400px;                // shrink to content width
+        max-width: 400px;
+  
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #fff;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #ccc;
+          line-height: 1.6;
+        }
+      }
+  
+      .product-image {
+        flex: 0 1 auto;                 // no forced expansion
+        display: flex;
+        justify-content: center;
+        position: relative;
+  
+        img {
+          max-width: 240px;
+          height: auto;
+          display: block;
+          position: relative;
+          z-index: 2;
+        }
+  
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -20px;
+          width: 70%;
+          height: 20px;
+          background: rgba(0, 0, 0, 0.4);
+          filter: blur(12px);
+          border-radius: 50%;
+          z-index: 1;
+        }
+      }
+    }
+  
+    /* 📱 Mobile */
+    @media (max-width: 768px) {
+      .product-row,
+      .product-row.reverse {
+        flex-direction: column;
+        text-align: center;
+  
+        .product-info {
+          text-align: center;
+          margin-top: 1.5rem;
+          max-width: 100%;
+        }
+  
+        .product-image img {
+          max-width: 180px;
+        }
+      }
+    }
+  }
+  
+
+
+  /* Customer Reviews */
+  .customer-reviews {
+    .reviews-heading {
+      color: #f5c542;
+      font-size: 1rem;
+      margin-bottom: 3rem;
+      font-weight: 500;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      .stars {
+        font-size: 1.1rem;
+        color: #000;
+        margin-bottom: 1rem;
+      }
+
+      .review-text {
+        font-size: 0.9rem;
+        color: #333;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+      }
+
+      .review-footer {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: #1e1f29;
+          color: #fff;
+          font-weight: bold;
+          font-size: 0.9rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .author {
+          h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0;
+          }
+
+          p {
+            font-size: 0.75rem;
+            color: #666;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

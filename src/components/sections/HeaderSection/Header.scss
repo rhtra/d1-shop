@@ -1,0 +1,103 @@
+@import "../../../styles/variables";
+
+.header {
+  font-family: $font-stack;
+
+  /* Promo bar */
+  &__promo {
+    display: flex;
+    justify-content: center;
+    background: #ffb800;
+    padding: 0.4rem 0;
+    span {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #000;
+    }
+  }
+
+  /* Main navigation */
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  /* Left section */
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &__menu {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 22px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: #0c1522;
+    }
+  }
+
+  &__logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0c1522;
+  }
+
+  /* Right section */
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__cta {
+    background: #0c1522;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    &:hover {
+      background: lighten(#0c1522, 10%);
+    }
+  }
+
+  &__cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__cart-icon {
+    stroke: #0c1522;
+  }
+
+  &__cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #000;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.2rem 0.45rem;
+    border-radius: 50%;
+  }
+}

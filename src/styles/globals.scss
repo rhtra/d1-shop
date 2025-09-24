@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  color: $primary;
+  background: #fff;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
