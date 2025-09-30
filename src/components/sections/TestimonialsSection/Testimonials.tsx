@@ -1,11 +1,11 @@
 import React from "react";
 import "./Testimonials.scss";
 import TestimonialsGrid, { Testimonial } from "./TestimonialsGrid";
-import BundleSection from "./Bundle";
+import BundleSection, { Bundle } from "./Bundle";
 
 type Props = {
   testimonials: Testimonial[];
-  bundle: BundleSection;
+  bundle: Bundle;
 };
 
 export default function Testimonials({ testimonials, bundle }: Props) {

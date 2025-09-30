@@ -1,9 +1,20 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "baseUrl": "src",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",   // for React 17+ JSX transform
+    "moduleResolution": "Node",
+    "module": "esnext",
+    "target": "esnext",
+    "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
-    }
-  }
+    },
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "types": ["react", "react-dom"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
 }

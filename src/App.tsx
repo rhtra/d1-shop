@@ -29,7 +29,7 @@ const App: React.FC = () => {
       <ResultsSection />
       <GetSetSection />
       <IngredientsSection ingredients={ingredients}/>
-      <ReviewsSection products={products} reviews={customerReviews} products={products} />
+      <ReviewsSection products={products} reviews={customerReviews} />
       <Testimonials testimonials={testimonials} bundle={bundle} />;
       <Footer />
     </>

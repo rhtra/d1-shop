@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "../ui/SectionTitle";
-import CTAButton from "../ui/CTAButton";
+import SectionTitle from "@/components/ui/SectionTitle";
+import CTAButton from "@/components/ui/CTAButton";
 import "./ProductsSection.scss";
 
 const ProductsSection: React.FC = () => (

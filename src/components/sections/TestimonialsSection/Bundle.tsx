@@ -1,37 +1,37 @@
 import React from "react";
 
-type Bundle = {
+export type Bundle = {
   title: string;
   description: string;
   checklist: string[];
   price: string;
-  images: string[];
+  image: string;
 };
 
 type Props = {
-  bundle: Bundle;
+  bundle: Bundle; // ✅ use Bundle directly, not typeof
 };
 
 export default function BundleSection({ bundle }: Props) {
-    return (
-      <div className="get-set">
-        <div className="text">
-          <p className="subtitle">Start your 1 minute routine</p>
-          <h3>{bundle.title}</h3>
-          <p className="description">{bundle.description}</p>
-  
-          <ul className="checklist">
-            {bundle.checklist.map((item, i) => (
-              <li key={i}>✔ {item}</li>
-            ))}
-          </ul>
-  
-          <button className="cta">ADD TO CART – {bundle.price}</button>
-        </div>
-  
-        <div className="images">
-          <img src={bundle.image} alt="Product Set" />
-        </div>
+  return (
+    <div className="get-set">
+      <div className="text">
+        <p className="subtitle">Start your 1 minute routine</p>
+        <h3>{bundle.title}</h3>
+        <p className="description">{bundle.description}</p>
+
+        <ul className="checklist">
+          {bundle.checklist.map((item, i) => (
+            <li key={i}>✔ {item}</li>
+          ))}
+        </ul>
+
+        <button className="cta">ADD TO CART – {bundle.price}</button>
       </div>
-    );
+
+      <div className="images">
+        <img src={bundle.image} alt="Product Set" />
+      </div>
+    </div>
+  );
 }
